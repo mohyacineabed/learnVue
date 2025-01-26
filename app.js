@@ -2,10 +2,23 @@ const app = Vue.createApp({
     data() {
         return {
             showContent: true,
-            chapter1: 'Introduction',
-            content1_1: 'Reminder',
-            content1_2: 'History',
-            content1_3: 'Basics'
+            chapters: {
+                chapter1: 'Introduction',
+                chapter2: 'Basics'
+            },
+            chapterContent: [
+                {
+                    section1: 'Reminder',
+                    section2: 'History',
+                    section3: 'Requirements' 
+                },
+                {
+                    section1: 'How to slice vegetables',
+                    section2: 'How to slice meat',
+                    section3: 'How to use oven',
+                    section4: 'Seasonings'
+                }
+            ]
         }
     },
     methods: {
