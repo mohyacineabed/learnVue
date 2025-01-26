@@ -1,0 +1,9 @@
+#contents .box {
+    display: inline-block;
+    margin: 20px 50px;
+    padding: 100px 0px;
+    width: 500px;
+    background-color: cadetblue;
+    text-align: center;
+    color: white;
+}
