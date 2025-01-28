@@ -1,24 +1,42 @@
 const app = Vue.createApp({
     data() {
         return {
-            showContent: true,
-            chapters: {
-                chapter1: 'Introduction',
-                chapter2: 'Basics'
-            },
-            chapterContent: [
+            showContent: false,        
+            books: 
                 {
-                    section1: 'Reminder',
-                    section2: 'History',
-                    section3: 'Requirements' 
-                },
-                {
-                    section1: 'How to slice vegetables',
-                    section2: 'How to slice meat',
-                    section3: 'How to use oven',
-                    section4: 'Seasonings'
+                    categories: [
+                        'Cooking',
+                        'Programming',
+                        'Sports',
+                        'Productivity'
+                    ],
+                    cooking: [
+                        'Frying fish',
+                        'Chicken recipes',
+                        'Kitchen basic skills',
+                        'Salad recipes'
+                    ],
+                    
+                    programming: [
+                        'Learn python',
+                        'Low level programming',
+                        'Operating systems',
+                        'Learn Frontend developemenet',
+                        'Computer hardware'
+                    ],
+                    sports: [
+                        'Tennis skills',
+                        'Motorsports driving techniques',
+                        'Football stories',
+                        'Golf secrets'
+                    ],
+                    productivity: [
+                        'Stay away from distractions',
+                        'Studying techniques',
+                        'How to read',
+                        'Master taking notes'
+                    ]
                 }
-            ]
         }
     },
     methods: {
