@@ -1,0 +1,6 @@
+body {
+    display: inline-block;
+}
+.book-list li {
+    margin: 10px 0px;
+}

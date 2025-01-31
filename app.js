@@ -1,7 +1,8 @@
 const app = Vue.createApp({
     data() {
         return {
-            showContent: false,        
+            showContent: true,
+            showCover: null,        
             books: 
                 {
                     categories: [
@@ -11,30 +12,116 @@ const app = Vue.createApp({
                         'Productivity'
                     ],
                     cooking: [
-                        'Frying fish',
-                        'Chicken recipes',
-                        'Kitchen basic skills',
-                        'Salad recipes'
+                        {
+                            title: 'Frying fish',
+                            cover: 'assets/cooking-cover.jpg',
+                            author: 'G.jenny',
+                            level: 'Beginner/Moderate'
+                        },
+                        {
+                            title: 'Kitchen basic skills',
+                            cover: 'assets/cooking-cover2.jpg',
+                            author: 'A.sam',
+                            level: 'Beginner'
+                        },
+                        {
+                            title: 'Chicken recipes',
+                            cover: 'assets/cooking-cover3.jpg',
+                            author: 'E.ben',
+                            level: 'Moderate'
+                        },
+                        {
+                            title: 'Salad recipes',
+                            cover: 'assets/cooking-cover4.jpg',
+                            author: 'S.yasmin',
+                            level: 'Beginner'
+                        }  
                     ],
                     
                     programming: [
-                        'Learn python',
-                        'Low level programming',
-                        'Operating systems',
-                        'Learn Frontend developemenet',
-                        'Computer hardware'
+                        {
+                            title: 'Learn python',
+                            cover: '#',
+                            author: 'G.jenny',
+                            level: 'Beginner/Moderate'
+                        },
+                        {
+                            title: 'Low level programming',
+                            cover: '#',
+                            author: 'A.sam',
+                            level: 'Beginner'
+                        },
+                        {
+                            title: 'Operating systems',
+                            cover: '#',
+                            author: 'E.ben',
+                            level: 'Moderate'
+                        },
+                        {
+                            title: 'Learn Frontend developemenet',
+                            cover: '#',
+                            author: 'S.yasmin',
+                            level: 'Beginner'
+                        },
+                        {
+                            title: 'Computer hardware',
+                            cover: '#',
+                            author: 'S.yasmin',
+                            level: 'Beginner'
+                        }
+                            
                     ],
                     sports: [
-                        'Tennis skills',
-                        'Motorsports driving techniques',
-                        'Football stories',
-                        'Golf secrets'
+                        {
+                            title: 'Tennis skills',
+                            cover: '#',
+                            author: 'G.jenny',
+                            level: 'Beginner/Moderate'
+                        },
+                        {
+                            title: 'Motorsports driving techniques',
+                            cover: '#',
+                            author: 'A.sam',
+                            level: 'Beginner'
+                        },
+                        {
+                            title: 'Football stories',
+                            cover: '#',
+                            author: 'E.ben',
+                            level: 'Moderate'
+                        },
+                        {
+                            title: 'Golf secrets',
+                            cover: '#',
+                            author: 'S.yasmin',
+                            level: 'Beginner'
+                        }     
                     ],
                     productivity: [
-                        'Stay away from distractions',
-                        'Studying techniques',
-                        'How to read',
-                        'Master taking notes'
+                        {
+                            title: 'Stay away from distractions',
+                            cover: '#',
+                            author: 'G.jenny',
+                            level: 'Beginner/Moderate'
+                        },
+                        {
+                            title: 'Studying techniques',
+                            cover: '#',
+                            author: 'A.sam',
+                            level: 'Beginner'
+                        },
+                        {
+                            title: 'How to read books',
+                            cover: '#',
+                            author: 'E.ben',
+                            level: 'Moderate'
+                        },
+                        {
+                            title: 'Master taking notes',
+                            cover: '#',
+                            author: 'S.yasmin',
+                            level: 'Beginner'
+                        }    
                     ]
                 }
         }
@@ -43,6 +130,14 @@ const app = Vue.createApp({
         toggleChapter() {
             this.showContent = !this.showContent
         },
+        toggleCover(e, display) {
+            if(e.type="mouseover") {
+                this.showCover = display;
+            }
+            else {
+                this.showCover = display;
+            }
+        }
         
     }
 

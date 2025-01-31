@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="stylesheet" href="main.css">
   <title>Learning Vue</title>
 </head>
 <body>
@@ -15,15 +16,20 @@
       <span v-if="!showContent">List all books</span>
       <span v-if="showContent">Hide all books</span>
     </button>
-    <ul v-if="showContent">
+    <ul calss="book-list" v-if="showContent">
       <h3>Cooking books:</h3>
-      <li v-for="book in books.cooking">{{book}}</li>
+      <li v-for="book in books.cooking">
+        <p style="display: inline;" @mouseover="toggleCover($event, book)" @mouseleave="toggleCover($event, null)">{{book.title}}</p>
+        
+        <br>
+        <img v-bind:src="book.cover" alt="cooking" width="100px" height="120px" v-if="showCover === book">
+      </li>
       <h3>Programming books:</h3>
-      <li v-for="book in books.programming">{{book}}</li>
+      <li v-for="book in books.programming">{{book.title}}</li>
       <h3>Sports books:</h3>
-      <li v-for="book in books.sports">{{book}}</li>
+      <li v-for="book in books.sports">{{book.title}}</li>
       <h3>Productivity books:</h3>
-      <li v-for="book in books.productivity">{{book}}</li>
+      <li v-for="book in books.productivity">{{book.title}}</li>
     </ul>
   </div>
 </body>
