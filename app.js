@@ -16,25 +16,29 @@ const app = Vue.createApp({
                             title: 'Frying fish',
                             cover: 'assets/cooking-cover.jpg',
                             author: 'G.jenny',
-                            level: 'Beginner/Moderate'
+                            level: 'Beginner/Moderate',
+                            liked: false
                         },
                         {
                             title: 'Kitchen basic skills',
                             cover: 'assets/cooking-cover2.jpg',
                             author: 'A.sam',
-                            level: 'Beginner'
+                            level: 'Beginner',
+                            liked: true
                         },
                         {
                             title: 'Chicken recipes',
                             cover: 'assets/cooking-cover3.jpg',
                             author: 'E.ben',
-                            level: 'Moderate'
+                            level: 'Moderate',
+                            liked: true
                         },
                         {
                             title: 'Salad recipes',
                             cover: 'assets/cooking-cover4.jpg',
                             author: 'S.yasmin',
-                            level: 'Beginner'
+                            level: 'Beginner',
+                            liked: false
                         }  
                     ],
                     
@@ -43,31 +47,36 @@ const app = Vue.createApp({
                             title: 'Learn python',
                             cover: '#',
                             author: 'G.jenny',
-                            level: 'Beginner/Moderate'
+                            level: 'Beginner/Moderate',
+                            liked: false
                         },
                         {
                             title: 'Low level programming',
                             cover: '#',
                             author: 'A.sam',
-                            level: 'Beginner'
+                            level: 'Beginner',
+                            liked: true
                         },
                         {
                             title: 'Operating systems',
                             cover: '#',
                             author: 'E.ben',
-                            level: 'Moderate'
+                            level: 'Moderate',
+                            liked: true
                         },
                         {
                             title: 'Learn Frontend developemenet',
                             cover: '#',
                             author: 'S.yasmin',
-                            level: 'Beginner'
+                            level: 'Beginner',
+                            liked: false
                         },
                         {
                             title: 'Computer hardware',
                             cover: '#',
                             author: 'S.yasmin',
-                            level: 'Beginner'
+                            level: 'Beginner',
+                            liked: false
                         }
                             
                     ],
@@ -76,25 +85,29 @@ const app = Vue.createApp({
                             title: 'Tennis skills',
                             cover: '#',
                             author: 'G.jenny',
-                            level: 'Beginner/Moderate'
+                            level: 'Beginner/Moderate',
+                            liked: false
                         },
                         {
                             title: 'Motorsports driving techniques',
                             cover: '#',
                             author: 'A.sam',
-                            level: 'Beginner'
+                            level: 'Beginner',
+                            liked: false
                         },
                         {
                             title: 'Football stories',
                             cover: '#',
                             author: 'E.ben',
-                            level: 'Moderate'
+                            level: 'Moderate',
+                            liked: false
                         },
                         {
                             title: 'Golf secrets',
                             cover: '#',
                             author: 'S.yasmin',
-                            level: 'Beginner'
+                            level: 'Beginner',
+                            liked: false
                         }     
                     ],
                     productivity: [
@@ -102,25 +115,29 @@ const app = Vue.createApp({
                             title: 'Stay away from distractions',
                             cover: '#',
                             author: 'G.jenny',
-                            level: 'Beginner/Moderate'
+                            level: 'Beginner/Moderate',
+                            liked: false
                         },
                         {
                             title: 'Studying techniques',
                             cover: '#',
                             author: 'A.sam',
-                            level: 'Beginner'
+                            level: 'Beginner',
+                            liked: true
                         },
                         {
                             title: 'How to read books',
                             cover: '#',
                             author: 'E.ben',
-                            level: 'Moderate'
+                            level: 'Moderate',
+                            liked: false
                         },
                         {
                             title: 'Master taking notes',
                             cover: '#',
                             author: 'S.yasmin',
-                            level: 'Beginner'
+                            level: 'Beginner',
+                            liked: true
                         }    
                     ]
                 }

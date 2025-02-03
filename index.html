@@ -18,18 +18,18 @@
     </button>
     <ul calss="book-list" v-if="showContent">
       <h3>Cooking books:</h3>
-      <li v-for="book in books.cooking">
+      <li v-for="book in books.cooking" v-bind:class="{like : book.liked}">
         <p style="display: inline;" @mouseover="toggleCover($event, book)" @mouseleave="toggleCover($event, null)">{{book.title}}</p>
         
         <br>
         <img v-bind:src="book.cover" alt="cooking" width="100px" height="120px" v-if="showCover === book">
       </li>
       <h3>Programming books:</h3>
-      <li v-for="book in books.programming">{{book.title}}</li>
+      <li v-for="book in books.programming" v-bind:class="{like : book.liked}">{{book.title}}</li>
       <h3>Sports books:</h3>
-      <li v-for="book in books.sports">{{book.title}}</li>
+      <li v-for="book in books.sports" v-bind:class="{like : book.liked}">{{book.title}}</li>
       <h3>Productivity books:</h3>
-      <li v-for="book in books.productivity">{{book.title}}</li>
+      <li v-for="book in books.productivity" v-bind:class="{like : book.liked}">{{book.title}}</li>
     </ul>
   </div>
 </body>

@@ -1,6 +1,16 @@
 body {
     display: inline-block;
+    justify-content: center;
+}
+li {
+    list-style-type: square;
+    justify-content: center;
+    
 }
 .book-list li {
     margin: 10px 0px;
+}
+.like {
+    text-decoration: underline;
+    color: darkgreen;
 }
