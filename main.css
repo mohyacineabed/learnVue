@@ -1,11 +1,7 @@
-body {
-    display: inline-block;
-    justify-content: center;
-}
+
 li {
-    list-style-type: square;
-    justify-content: center;
-    
+    list-style-type: none;
+    justify-content: center;    
 }
 .book-list li {
     margin: 10px 0px;

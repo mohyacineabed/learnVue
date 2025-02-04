@@ -154,6 +154,14 @@ const app = Vue.createApp({
             else {
                 this.showCover = display;
             }
+        },
+        toggleLike(book) {
+            /*if(book.liked == true) {
+                book.liked = false;
+            } else {
+                book.liked = true;
+            } */
+           book.liked = !book.liked;
         }
         
     }
