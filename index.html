@@ -32,7 +32,7 @@
       <div class="col-sm-4 col-lg-3 my-3">
         <div>
           <h3>Cooking books:</h3>
-          <li class="user-select-none" v-for="book in books.cooking" v-bind:class="{like : book.liked}" @dblclick="toggleLike(book)">
+          <li class="user-select-none" v-for="book in cookingLiked" v-bind:class="{like : book.liked}" @dblclick="toggleLike(book)">
             <p style="display: inline;" @mouseover="toggleCover($event, book)" @mouseleave="toggleCover($event, null)">{{book.title}}</p>
 
             <br>
@@ -43,13 +43,13 @@
       <div class="col-sm-4 col-lg-3 my-3">
         <div>
           <h3>Programming books:</h3>
-          <li class="user-select-none" v-for="book in books.programming" v-bind:class="{like : book.liked}">{{book.title}}</li>
+          <li class="user-select-none" v-for="book in programmingLiked" v-bind:class="{like : book.liked}">{{book.title}}</li>
         </div>
       </div>
       <div class="col-sm-4 col-lg-3 my-3">
         <div>
           <h3>Sports books:</h3>
-          <li class="user-select-none" v-for="book in books.sports" v-bind:class="{like : book.liked}">{{book.title}}</li>
+          <li class="user-select-none" v-for="book in sportsLiked" v-bind:class="{like : book.liked}">{{book.title}}</li>
         </div>
       </div>
       <div class="col-sm-4 col-lg-3 my-3">

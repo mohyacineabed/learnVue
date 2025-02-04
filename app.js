@@ -164,6 +164,18 @@ const app = Vue.createApp({
            book.liked = !book.liked;
         }
         
+    },
+    computed: {
+        // filter books to only liked books
+        cookingLiked() {
+            return this.books.cooking.filter(book => book.liked)
+        },
+        programmingLiked() {
+            return this.books.programming.filter(book => book.liked)
+        },
+        sportsLiked() {
+            return this.books.sports.filter(book => book.liked)
+        }
     }
 
 })
